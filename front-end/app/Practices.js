@@ -160,3 +160,54 @@ var factorial = function(n)
 };
 
 console.log('Factorial of', n, 'is',  factorial(n));
+
+
+
+/*var sayHello function(name){
+    console.log('hello' + name + '!');
+};
+sayHello('pepe');
+
+//funcion anonima
+(function(name){
+    console.log('hello' + name + '!');
+})
+('pepe');
+
+
+var getSayHello = function(){
+
+    console.log('executing getsayhello');
+
+    return function(name){
+
+        console.log('Hello' +name+ '!');
+    };
+};
+
+var SayHello = getSayHello();
+*/
+
+
+(function(){
+
+    console.log('executing getsayhello');
+
+    return function(name){
+
+        console.log('Hello' +name+ '!');
+    };
+})();
+
+var SayHello= (function(){
+
+    console.log('executing getsayhello');
+
+    return function(name){
+
+        console.log('Hello' +name+ '!');
+    };
+}) ();
+
+
+
